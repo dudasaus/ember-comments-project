@@ -11,6 +11,7 @@ export default Object.create({
   },
 
   addComment(comment) {
+    comment.id = this.rows.length;
     this.rows.push(comment);
   }
 });
