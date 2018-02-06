@@ -1,0 +1,14 @@
+<div>
+  {{#if session.user}}
+    <span>Logged in as {{session.user}}</span><button {{action "logout"}}>Logout</button>
+  {{else}}
+    <form>
+      {{input
+        value=username
+        placeholder="Username"
+        update=(action (mut username))
+      }}
+      <button {{action "login"}}>Login</button>
+    </form>
+  {{/if}}
+</div>
