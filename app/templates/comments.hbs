@@ -1,1 +1,10 @@
 <h2>Comments</h2>
+
+<div class="comments">
+  {{#each model as |comment|}}
+    <div id="comment-{{comment.id}}">
+      <strong>{{comment.user}}</strong>
+      <span>{{comment.text}}</span>
+    </div>
+  {{/each}}
+</div>
