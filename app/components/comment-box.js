@@ -7,6 +7,8 @@ export default Component.extend({
       const text = this.get('text');
       const user = 'Username';
       const comment = { user, text };
+      this.get('addComment')(comment);
+      this.set('text', '');
     }
   }
 });

@@ -1,6 +1,6 @@
 <h2>Comments</h2>
 
-{{comment-box addComment=(action "addComment")}}
+{{comment-box addComment=(route-action "addComment")}}
 <div class="comments">
   {{#each model as |comment|}}
     {{comment-display comment=comment}}
