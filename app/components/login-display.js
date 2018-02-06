@@ -7,6 +7,7 @@ export default Component.extend({
   actions: {
     login() {
       this.get('session').login(this.get('username'));
+      this.set('username', '');
     },
     logout() {
       this.get('session').logout();
