@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<h1>Comments testing website</h1>
+<h2>Navigation</h2>
+<ul>
+  <li>{{#link-to "index"}}Home{{/link-to}}</li>
+  <li>{{#link-to "comments"}}Comments{{/link-to}}</li>
+</ul>
+<div class="body">
+  {{outlet}}
+</div>
